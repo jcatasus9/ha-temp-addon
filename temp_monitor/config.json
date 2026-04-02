@@ -1,10 +1,14 @@
 {
-  "name": "Temperature Monitor",
+  "name": "Temp Monitor",
   "version": "1.0",
   "slug": "temp_monitor",
   "description": "CPU + NVMe temperature",
   "startup": "services",
   "boot": "auto",
   "host_network": true,
-  "arch": ["aarch64"]
+  "arch": ["aarch64"],
+  "init": false,
+  "privileged": ["SYS_RAWIO"],
+  "devices": ["/dev"],
+  "map": ["config:rw"]
 }
