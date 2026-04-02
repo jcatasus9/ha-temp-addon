@@ -1,0 +1,10 @@
+{
+  "name": "Temperature Monitor",
+  "version": "1.0",
+  "slug": "temp_monitor",
+  "description": "CPU + NVMe temperature",
+  "startup": "services",
+  "boot": "auto",
+  "host_network": true,
+  "arch": ["aarch64"]
+}
